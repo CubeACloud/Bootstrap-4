@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Bootstrap grid</title>
+<link href="style.css" rel="stylesheet">
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js"></script>
+</head>
+<body>
+
+    <!--in Bootstrap , grid system is built with flexbox and allows up to 12 columns across the page.
+    you can also create columns group to create wider columns
+    -->
+    
+    <!--GRID CLASSES
+    
+    In Bootstrap we have 5 grid classes :
+
+    .col- (extra small devices - screen width less than 576px)
+    .col-sm- (small devices - screen width equal to or greater than 576px)  sm= small
+    .col-md- (medium devices - screen width equal to or greater than 768px) md= medium
+    .col-lg- (large devices - screen width equal to or greater than 992px)  lg= large
+    .col-xl- (xlarge devices - screen width equal to or greater than 1200px) xl=xlarge
+
+    Note: These Classes can be combined to create more dynamic layout.
+    for example class="col col-md"
+    -->
+
+
+    <!--creating same width columns by using bootstrap-->
+    <div class="row">
+            <div class="col" style="background-color:lavender;">.col</div>
+            <div class="col" style="background-color:orange;">.col</div>
+            <div class="col" style="background-color:lavender;">.col</div>
+          </div>
+        
+        <br/> <!--for break line-->
+        <br/> <!--for break line-->
+        <br/> <!--for break line-->
+
+          <!--using columns with dynamic classes-->
+
+
+          <div class="row">
+<!-- On mobile phones or screens that are less than 576px wide, the columns will automatically stack on top of each other:-->
+                <div class="col col-sm-2" style="background-color:lavender;">col col-sm-2</div>
+
+<!-- On mobile phones or screens that are less than 768px wide, the columns will automatically stack on top of each other:-->        
+                <div class="col col-md-4" style="background-color:orange;">col col-md-4</div>
+
+<!-- On mobile phones or screens that are less than 992px wide, the columns will automatically stack on top of each other:-->
+              <div class="col col-lg-2" style="background-color:blue;">col col-lg-2</div>
+
+<!-- On mobile phones or screens that are less than 1200px wide, the columns will automatically stack on top of each other:-->
+                <div class="col col-xl-4" style="background-color:lavender;">col col-xl-4</div>
+
+              </div>
+            
+            
+
+</body>
+</html>
